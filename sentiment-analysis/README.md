@@ -1,5 +1,5 @@
 # Sentiment Analysis
-This folder contains three Jupyter Notebook files for each of subtasks specified in description. All notebooks are independent and works fine alone. You can open them in GitHub preview or proceed on Google Colab by clicking on the buttons below.
+This folder contains three Jupyter Notebook files for each of subtasks specified in description. All notebooks are independent and work standalone. You can open them in GitHub preview or proceed on Google Colab by clicking on the buttons below.
 
 ### `character-cnn.ipynb` [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/euav/natural-language-processing/blob/master/sentiment-analysis/character-cnn.ipynb)
 Character-level convolutional neural network.
@@ -23,7 +23,7 @@ Each tweet can contain one of three sentiments:
 **Negative**
 > многа ДМ) спойлер - сбербанк говно, но мисшн комплитд
 
-**neutral**
+**Neutral**
 > Я просто зашла в Альфа банк и увидела этот журнал) Мило.
 
 Accordingly, you will need to create a system that would be able to correctly determine the sentiment of the tweets from the test set after its training on training data. Such task relates to a three-class classification problem, but you have to evaluate the final quality on the test set using only two classes — positive and negative emotions, without taking into account neutral ones. We will have two quality criteria: F1-measure with macro averaging and F1-measure with micro-averaging. The task has more detailed description in this [article](http://www.dialog-21.ru/media/3410/loukachevitchnvrubtsovayv.pdf).
@@ -34,7 +34,7 @@ After preparing data you have to create three deep learning algorithms for solvi
 
 1. Character-level convolutional neural network based on representation of texts as a character sequences. You can be guided by this paper \[[1](https://goo.gl/fkYCZd)\]. I recommend you to use the [Keras](https://keras.io) library for developing of neural network, but you can use any another library, such as Tensorflow or PyTorch.
 
-2. Word-level convolutional neural network, based on representation of texts as a word sequences, like it is described in Yoon Kim’s paper \[[2](https://goo.gl/GsqyMn)\]. I recommend you to not use simple *Word2Vec* embeddings, because they are not suit for such inflexional language as Russian. Instead of the *Word2Vec* you can use the *FastText* embeddings based on subword representation. Pretrained FastText models for Russian can be available in website of the [RusVectores](https://rusvectores.org/ru/models/) project  or in «native» [FastText](https://fasttext.cc/docs/en/crawl-vectors.html) website (see *.bin files). For working with the FastText in Python you have to use special Gensim library:
+2. Word-level convolutional neural network, based on representation of texts as a word sequences, like it is described in Yoon Kim’s paper \[[2](https://goo.gl/GsqyMn)\]. I recommend you to not use simple Word2Vec embeddings, because they are not suit for such inflexional language as Russian. Instead of the Word2Vec you can use the FastText embeddings based on subword representation. Pretrained FastText models for Russian can be available in website of the [RusVectores](https://rusvectores.org/ru/models/) project  or in «native» [FastText](https://fasttext.cc/docs/en/crawl-vectors.html) website (see *.bin files). For working with the FastText in Python you have to use special Gensim library:
     - https://radimrehurek.com/gensim/models/fasttext.html
     - https://radimrehurek.com/gensim/models/_fasttext_bin.html
 
