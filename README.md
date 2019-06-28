@@ -3,5 +3,4 @@ This repository contains solutions of homeworks on «Deep Learning in Natural La
 
 ### Table of Content
 1. [Sentiment Analysis](https://github.com/euav/natural-language-processing/tree/master/sentiment-analysis)
-2. [Named Entity Recognition](https://github.com/euav/natural-language-processing/tree/master/named-entity-recognition)
-3. [Weather Chatbot](https://github.com/euav/natural-language-processing/tree/master/weather-chatbot)
+2. [Weather Chatbot](https://github.com/euav/natural-language-processing/tree/master/weather-chatbot)
